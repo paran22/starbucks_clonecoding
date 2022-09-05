@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:starbucks_clonecoding/ui/screen/home_screen.dart';
 
 void main() {
-  runApp(const MaterialApp(
-  ));
+  runApp(
+    ProviderScope(
+      child: MaterialApp(
+        home: HomeScreen(),
+      ),
+    ),
+  );
 }
